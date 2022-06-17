@@ -14,7 +14,7 @@ class UserInterface {
         System.out.println("\nCreate a new Employee\n");
         scanner = scannerObject;
         Arrays.stream(fields).forEach((field) -> askData(field));
-        DataStore.insert((HashMap<String, String>)EmployeeData.clone());
+        DataStore.insert(new HashMap<String, String>(EmployeeData));
         callMenu();
     }
     static void readScreen(Scanner scannerObject) {
