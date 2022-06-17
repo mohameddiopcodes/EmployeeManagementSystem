@@ -13,6 +13,7 @@ class Application {
     }
 
     static void menu() {
+            clear();
             System.out.println("\nWelcome to your employee management system\n");
             System.out.println("Select one of the following options:\n");
     
